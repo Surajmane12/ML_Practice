@@ -1,9 +1,11 @@
 import streamlit as st
 import pandas as pd
 import joblib
-
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+
 
 
 model = joblib.load(os.path.join(BASE_DIR, 'KNN_heart.pkl'))
